@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Surveyer.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome Please Log in to Continue"/>
+            <Label Text="UserName" TextColor="Black"/>
+            <Entry x:Name="txtUserName"/>
+            <Label Text="Password" TextColor="Black"/>
+            <Entry IsPassword="true" x:Name="txtPass"/>
+            <Button Text="Log In" Clicked="btnLogin_Clicked"/>
+            <Label Text="Don't have account?"/>
+            <Button Text="Sign Up" Clicked="btnSignup_Clicked" x:Name="btnSignup"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
