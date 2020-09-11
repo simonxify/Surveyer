@@ -3,15 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Surveyer.LoginPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Please Login to Continue"/>
+        <StackLayout VerticalOptions="Start" Spacing="10">
+            <Label HorizontalOptions="Center" Text="Please Login to Continue"/>
             <Label Text="UserName" TextColor="Black"/>
             <Entry x:Name="txtUserName1"/>
             <Label Text="Password" TextColor="Black"/>
             <Entry x:Name="txtPassword1"/>
-            <Button x:Name="btnLogin" Text="Log In"/>
+            <Button x:Name="btnLogin" Text="Log In" BackgroundColor="DeepSkyBlue" BorderRadius="20" TextColor="White">
+                <Button.Image>
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                                iOS="ic_back_arrow.png"
+                                Android="ic_back_arrow.png"/>
+                </Button.Image>
+            </Button>
             <Label Text="Don't Have Account?"/>
-            <Button x:Name="btnSignup" Text="Sign Up"/>
+            <Button x:Name="btnSignup" Text="Sign Up with Facebook" BackgroundColor="DeepSkyBlue" BorderRadius="20" TextColor="White"/>
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
